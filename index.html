@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<!--
+	$$\   $$\            $$\
+	$$$\  $$ |           $$ |
+	$$$$\ $$ | $$$$$$\ $$$$$$\    $$$$$$\
+	$$ $$\$$ | \____$$\\_$$  _|  $$  __$$\
+	$$ \$$$$ | $$$$$$$ | $$ |    $$$$$$$$ |
+	$$ |\$$$ |$$  __$$ | $$ |$$\ $$   ____|
+	$$ | \$$ |\$$$$$$$ | \$$$$  |\$$$$$$$\
+	\__|  \__| \_______|  \____/  \_______|
+
+	Made in 2013
+-->
+
+  <html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Well, is it?</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+
+
+        <script>
+            var d = new Date();
+            var m = d.getMinutes();
+            var h = d.getHours();
+
+            var day = d.getDate();
+            var month = d.getMonth();
+
+            if( day == 20 && month == 3 ) {
+              document.write('<link rel="stylesheet" href="css/420.css">');
+            } else {
+
+              if ( h == 4 && m == 20 ){
+                  document.write('<link rel="stylesheet" href="css/420.css">');
+              }
+              else if ( h == 16 && m == 20 ) {
+                  document.write("<link rel='stylesheet' href='css/420.css'>");
+              }
+              else
+              {
+              }
+            }
+        </script>
+
+    </head>
+    <body class="body">
+
+        <div class="wrapper">
+            <h1 class=" animated fadeInUp">Is it 4:20 yet?</h1>
+
+            <h1 class="no animated fadeInUp">
+                <script type="text/javascript">
+                    document.write('No')
+                </script>
+            </h1>
+            <h1 class="yes animated fadeInUp">
+                <script type="text/javascript">
+                    document.write('Yes')
+                </script>
+            </h1>
+
+
+        </div>
+
+      	<img id="background-image-no" class="animated fadeIn" src="img/facepalm.svg" alt="" />
+      	<img id="background-image-yes" class="animated fadeIn" src="img/leaf.svg" alt="" />
+
+        <div id="top-border"></div>
+        <div id="bottom-border"></div>
+        <div id="left-border"></div>
+        <div id="right-border"></div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-29923838-9', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+        <script src="js/plugins.js"></script>
+
+    </body>
+</html>
